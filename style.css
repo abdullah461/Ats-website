@@ -1,0 +1,277 @@
+/* general styling */
+:root {
+    --smaller: .75;
+  }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body{
+    background-color: white;
+    height: 100vh;   
+     
+}
+body h1{
+  font-size: 70px;
+}
+body h3{
+  font-size: 32px;
+}
+body p{
+  line-height: 25px;
+  font-size: 18px;
+}
+body button{
+  padding-inline: 40px;
+  padding-block: 20px;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 2rem;
+  background-color: #fff; 
+}
+
+header{
+  position: relative;
+  background-image: url( static/10\ Of\ The\ Most\ Instagrammable\ Places\ In\ Abuja\ -\ Dream\ Africa.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header::before{
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0,0,0,0.6);
+}
+
+header nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    position: relative;
+
+}
+
+header nav ul{
+    display: flex;
+    gap: 4rem;
+    list-style: none;  
+    
+}
+header nav ul a{
+    text-decoration: none;
+    color: white;  
+}
+
+/* banner */
+
+.banner{
+  position: relative;
+    justify-content: center;
+    min-height: 500px;
+    align-items: center;
+    display: flex;
+}
+.banner article{
+display: flex;
+flex-direction: column;
+gap: 20px;
+align-items: center;
+}
+
+.banner article h1{
+    font-size: 70px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: white;  
+
+}
+.banner article h1 span{
+  animation: typing 5s steps(13, end), blink-caret 0.5s step-end infinite alternate;
+  width: 13ch;
+  border-right: 4px solid rgb(255, 255, 255);
+  margin: 2rem auto;
+  white-space: nowrap;
+  overflow: hidden;
+  animation-iteration-count: infinite;
+}
+.banner article p{
+  color: white;
+}
+
+@keyframes typing {
+  from {
+      width: 0;
+  }
+}
+
+@keyframes blink-caret {
+  50% {
+      border-color: transparent;
+  }
+}
+
+
+.banner article p{
+    text-align: center;
+    font-size: 18px;
+}
+.banner article .cta{
+  display: flex;
+  gap: 10px;
+}
+/* .banner article .cta button{
+    padding-inline: 40px;
+    padding-block: 20px;
+    cursor: pointer;
+    border: unset;
+    border-radius: 2rem;
+    background-color: #fff;
+} */
+
+/* about */
+#about{
+    background-color: white;
+}
+
+section{
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-event article{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.top{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.btm .text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btm .text .w-w{
+    display: flex;
+    gap: 20px;
+}
+.btm .text .w-w h4{
+  font-size: 18px;
+}
+.btm .text .w-w .where, .when{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+
+
+
+/* count down */
+#count-timer{
+    background-color: #ffd54f;
+    display: flex;
+}
+  
+  .count-down {
+    align-items: center;
+    display: flex;
+    font-family: -apple-system, 
+      BlinkMacSystemFont, 
+      "Segoe UI", 
+      Roboto, 
+      Oxygen-Sans, 
+      Ubuntu, 
+      Cantarell, 
+      "Helvetica Neue", 
+      sans-serif;
+      color: #333;
+      margin: 0 auto;
+      text-align: center;
+  }
+  
+.count-down h1 {
+    font-weight: normal;
+    letter-spacing: .125rem;
+    text-transform: uppercase;
+    font-size: 64px;
+  }
+  
+  .count-down li {
+    display: inline-block;
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+  }
+  
+  .count-down  li span {
+    display: block;
+    font-size: 4.5rem;
+  }
+  
+  .count-down  .emoji {
+    display: none;
+    padding: 1rem;
+  }
+  
+  .count-down .emoji span {
+    font-size: 4rem;
+    padding: 0 .5rem;
+  }
+  
+  @media all and (max-width: 768px) {
+    .count-down h1 {
+      font-size: calc(1.5rem * var(--smaller));
+    }
+    
+    .count-down li {
+      font-size: calc(1.125rem * var(--smaller));
+    }
+    
+    .count-down  li span {
+      font-size: calc(3.375rem * var(--smaller));
+    }
+  }
+
+.rsvp article{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact article{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.contact article .heading{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact article .e-s{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
