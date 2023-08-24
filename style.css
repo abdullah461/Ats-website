@@ -377,6 +377,7 @@ body p {
 }
 .banner article p{
   font-size: 13px;
+  text-align: center;
 }
 body h1{
   font-size: 48px;
