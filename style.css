@@ -72,10 +72,9 @@ header::before{
 
 header nav{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: end;
     padding: 2rem;
-    position: relative;
+    position: sticky;
 
 }
 
@@ -83,13 +82,15 @@ header nav ul{
     display: flex;
     gap: 4rem;
     list-style: none;  
-    position: relative;
+    position: fixed;
 }
-header nav ul a{
-    text-decoration: none;
-    color: white;  
-    font-family: 'Montserrat', sans-serif;
-
+header nav ul a button{
+  box-shadow: 0px 5px 0px #D82648;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+header nav ul a button:hover{
+  transform: translateY(-5x);
+  box-shadow: 0px 0px 0px #D82648;
 }
 
 /* banner */
