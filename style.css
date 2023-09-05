@@ -74,6 +74,7 @@ header nav{
     display: flex;
     justify-content: end;
     padding: 2rem;
+    height: 100px;
     position: sticky;
 
 }
@@ -346,6 +347,33 @@ section{
   .top p{
     width: 300;
   }
+  .hamburger{
+    display: block;
+    z-index: 1000;
+    position: absolute;
+    margin-right: 1em;
+  }
+   header nav{
+    align-items: center;
+    padding: 0;
+  } 
+  header nav ul{
+    position: relative;
+    background-color: black;
+    justify-content: center;
+    width: 100%;
+    z-index: 1000;
+    height: 160px;
+    align-items: center;
+    border-radius: 20px;
+    margin: 0px;
+     display: none;
+  }
+  ul.open{
+    display: flex;
+    pointer-events: all; 
+  }
+  
 }
 
 @media all and (max-width: 600px) {
